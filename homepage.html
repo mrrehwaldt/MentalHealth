@@ -1,109 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<style type="text/css">
 
-    <!--Jon's Comment-->
-    <!--Ethan's Comment-->
-    <!--Annijah's Comment-->
-    <!--Liz's Comment-->
-    <!--Damian's comment-->
-    <!--Cheez's Comment-->
+#info {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 40px;
+  text-align: center;
+}
+#resources {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  top:500px;
+  left:900px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 40px;
+  text-align: center;
+}
+#water {
+  height:100px;
+  width: 300px;
+  position: absolute;
+  top:500px;
+  left:500px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 40px;
+  text-align: center;
+}
+#table {
+  height:500px;
+  width: 300px;
+  position: absolute;
+  top:700px;
+  left:500px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 35px;
+  text-align: center;
+}
+#Annijah{
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  top:700px;
+  left:900px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 35px;
+  text-align: center;
+}
+#boxy {
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  border: 4px solid #c20000;
+  color: #000;
+  font-family: impact;
+  font-size: 40px;
+  text-align: center;
+}
+body {
+  overflow: auto;
+}
+</style>
+<div class="container">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <!--Import javascript.js-->
-    <script src="javascript.js"></script>
-
-  </head>
-
-  <body>
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <div class="nav-wrapper">
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
       <nav>
-          <a href="#!" class="brand-logo">
-            <i class="material-icons">dehaze</i>
-          </a>
-          <ul id="Nav-Mobile" class="right hide-on-med-and-down">
-            <li><a href="information.html">Information</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        <nav class="red darken-3">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right"></i></a></li>
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+              </div>
+            </nav>
 
-    <div class="carousel carousel-slider">
-      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
-      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
-    </div>
+            <div id="info">
+              info
+            </div>
+            <div id="resources">
+              Volunteer
+            </div>
+            <div id="water">
+              Resources
+            </div>
+            <div id="table">
+              This is a box
+            </div>
+            <div id="Annijah">
+              Another box
+            </div>
+            <div id="boxy">
+              Also a box
+            </div>
 
-    <div class="hero-text">
-
-      <h1> Dance Party WOW!!! </h1>
-      <p> Was Good Bruh </p>
-
-    </div>
-    </div>
-
-    <div style="float: left; width: 33%;">
-    <ul>
-    <li>Title</li>
-    <li>Left Item 2</li>
-    <li>Left Item 3</li>
-    <li>Left Item 4</li>
-    <li>Left Item 5</li>
-    </ul>
-    </div>
-    <div style="float: left; width: 33%;">
-    <ul>
-    <li>Title</li>
-    <li>Middle Item 2</li>
-    <li>Middle Item 3</li>
-    <li>Middle Item 4</li>
-    <li>Middle Item 5</li>
-    </ul>
-    </div>
-    <div style="float: right; width: 33%;">
-    <ul>
-    <li> Title</li>
-    <li>Right Item 2</li>
-    <li>Right Item 3</li>
-    <li>Right Item 4</li>
-    <li>Right Item 5</li>
-    </ul>
-    </div>
-
-    <style>
-    .bordered {
-      width: 1300px;
-      height: 300px;
-      padding: 20px;
-      border: 3px solid pink;
-    }
-    </style>
-
-    <div class="bordered">
-
-    </div>
-
-  </body>
-
-</html>
+</div>
