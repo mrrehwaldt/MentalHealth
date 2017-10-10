@@ -31,14 +31,15 @@
   <body>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <div class="nav-wrapper">
       <nav>
-          <a href="#!" class="brand-logo">
-            <i class="material-icons">dehaze</i>
-          </a>
+        <div class="container">
+            <a class="dropdown-button hover" data-beloworigin
+            ="true" href="#" data-activates="dropdown1" ><i class="material-icons">dehaze</i></a>
+
           <ul id="Nav-Mobile" class="right hide-on-med-and-down">
             <li><a href="information.html">Information</a></li>
             <li><a href="resources.html">Resources</a></li>
@@ -47,6 +48,14 @@
         </div>
       </nav>
     </div>
+    </div>
+
+    <!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+  <li><a href="#!"><i class="material-icons">info</i>Information</a></li>
+  <li><a href="#!"><i class="material-icons">local_phone</i>Resources</a></li>
+  <li><a href="#!"><i class="material-icons">search</i>Volunteer</a></li>
+</ul>
 
     <div class="carousel carousel-slider">
       <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
@@ -60,7 +69,8 @@
     <div class="row">
       <div class="col s4 center">
         <!-- Promo Content 1 goes here -->
-        <i class="material-icons">info</i>
+        <a href="information.html">
+        <i class="material-icons">info</i></a>
         <br>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
