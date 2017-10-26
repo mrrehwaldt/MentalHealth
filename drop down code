@@ -1,0 +1,17 @@
+<!--Import materialize.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <div class="nav-wrapper">
+      <nav class="blue">
+        <div class="container">
+
+            <a class="dropdown-button hover s4" data-beloworigin
+            ="true" href="#" data-activates="dropdown1" ><i class="material-icons">dehaze</i></a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="homepage.html" class="blue-text"><i class="material-icons blue-text">home</i>Home</a></li>
+              <li><a href="information.html" class="blue-text"><i class="material-icons blue-text">info</i>Information</a></li>
+              <li><a href="resources.html" class="blue-text"><i class="material-icons blue-text">local_phone</i>Resources</a></li>
+              <li><a href="volunteer.html" class="blue-text"><i class="material-icons blue-text">search</i>Volunteer</a></li>
+            </ul>
