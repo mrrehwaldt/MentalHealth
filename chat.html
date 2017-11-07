@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<!--Import javascript.js-->
+<script src="homepage.js"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+<!-- Firechat -->
+<link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
+<script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
+<nav>
+  <nav class="blue">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <a href="sass.html"></a></li>
+        <a href="badges.html"></a></li>
+      </div>
+      <script>
+      <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBDgKtKoVEmyd7t5r2Ssghfm5yqtaUdom0",
+    authDomain: "mentalhealth-ffd18.firebaseapp.com",
+    databaseURL: "https://mentalhealth-ffd18.firebaseio.com",
+    projectId: "mentalhealth-ffd18",
+    storageBucket: "mentalhealth-ffd18.appspot.com",
+    messagingSenderId: "686026203951"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  function login() {
+();
+    firebase.auth()sign In Anonymously(provider).catch(function(error) {
+      console.log("Error authenticating user:", error);
+    });
+  }
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    // Once authenticated, instantiate Firechat with the logged in user
+    if (user) {
+      initChat(user);
+    }
+  });
+</script>
+<div class= "container" id="bottom container">...</div>
+<button onclick="login()">Sign In Anonymously</button>
+      <script>
+  function initChat(user) {
+    // Get a Firebase Database ref
+    var chatRef = firebase.database().ref("chat");
+
+    // Create a Firechat instance
+    var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
+
+    // Set the Firechat user
+    chat.setUser(user.uid, user.displayName);
+  }
+</script>
+
+<div id="firechat-wrapper"></div>
+</div>
