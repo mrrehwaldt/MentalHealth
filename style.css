@@ -1,0 +1,38 @@
+body {
+    background-color: #72d98c;
+    color: white;
+    font-family: arial bold, sans-serif;
+    text-align: center;
+
+
+
+  }
+  #title{
+background-color: transperent;
+color: red;
+
+
+  }
+  .text{
+font-family: tahoma; serif;
+text-aline: right
+
+
+
+  }
+
+  .picture{
+    border: 10px solid black;
+
+  }
+
+ Button {
+background-color: Black
+fonr-weight; bold;
+color; white;
+border; 10px solid #ffff00;
+border-radius: 5px;
+
+
+
+ }
