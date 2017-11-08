@@ -24,83 +24,104 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <!--Import javascript.js-->
-    <script src="javascript.js"></script>
+    <script src="homepage.js"></script>
 
   </head>
 
   <body>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--Import materialize.js-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <div class="nav-wrapper">
-      <nav>
-          <a href="#!" class="brand-logo">
-            <i class="material-icons">dehaze</i>
-          </a>
-          <ul id="Nav-Mobile" class="right hide-on-med-and-down">
-            <li><a href="information.html">Information</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-          </ul>
+      <nav class="blue">
+
+
+            <a class="dropdown-button hover" data-hover="true" data-belowOrigin
+            ="true" href="#" data-activates="dropdown1" ><i class="material-icons">dehaze</i></a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="homepage.html" class="blue-text"><i class="material-icons blue-text">home</i>Home</a></li>
+              <li><a href="information.html" class="blue-text"><i class="material-icons blue-text">info</i>Information</a></li>
+              <li><a href="resources.html" class="blue-text"><i class="material-icons blue-text">local_phone</i>Resources</a></li>
+              <li><a href="volunteer.html" class="blue-text"><i class="material-icons blue-text">search</i>Volunteer</a></li>
+            </ul>
+
         </div>
       </nav>
     </div>
 
-    <div class="carousel carousel-slider">
-      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
-      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="fixed1.jpg">
+        </li>
+        <li>
+          <img src="fixed2.jpg">
+        </li>
+        <li>
+          <img src="fixed3.jpg">
+        </li>
+        <li>
+          <img src="fixed4.png">
+        </li>
     </div>
 
-    <div class="hero-text">
+    <br>
+    <br>
 
-      <h1> Dance Party WOW!!! </h1>
-      <p> Was Good Bruh </p>
+    <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l4 center">
+        <!-- Promo Content 1 goes here -->
+        <a href="information.html">
+        <i class="large material-icons">info</i></a>
+        <br>
+        <h5 class="center">Information</h5>
 
+        <p>We have information on mental disorders, treatment of mental disorders, and information on general mental wellness.</p>
+      </div>
+      <div class="col s12 m12 l4 center">
+        <!-- Promo Content 2 goes here -->
+        <a href="resources.html">
+        <i class="large material-icons">local_phone</i></a>
+        <br>
+        <h5 class="center">Resources</h5>
+
+        <p>We have resouces to get help in emergency situations and for professional help.</p>
+      </div>
+      <div class="col s12 m12 l4 center">
+        <!-- Promo Content 3 goes here -->
+        <a href="volunteer.html">
+        <i class="large material-icons">search</i></a>
+        <br>
+        <h5 class="center">Volunteer</h5>
+
+        <p>You can get information on how and where to volunteer, support groups near you, and informatin on possible mental illnesses.</p>
+      </div>
     </div>
     </div>
 
-    <div style="float: left; width: 33%;">
-    <ul>
-    <li>Title</li>
-    <li>Left Item 2</li>
-    <li>Left Item 3</li>
-    <li>Left Item 4</li>
-    <li>Left Item 5</li>
-    </ul>
-    </div>
-    <div style="float: left; width: 33%;">
-    <ul>
-    <li>Title</li>
-    <li>Middle Item 2</li>
-    <li>Middle Item 3</li>
-    <li>Middle Item 4</li>
-    <li>Middle Item 5</li>
-    </ul>
-    </div>
-    <div style="float: right; width: 33%;">
-    <ul>
-    <li> Title</li>
-    <li>Right Item 2</li>
-    <li>Right Item 3</li>
-    <li>Right Item 4</li>
-    <li>Right Item 5</li>
-    </ul>
-    </div>
-
-    <style>
-    .bordered {
-      width: 1300px;
-      height: 300px;
-      padding: 20px;
-      border: 3px solid pink;
-    }
-    </style>
-
-    <div class="bordered">
+    <div class="container blue s12">
+      <br>
+      <div class="row center">
+        <h5 class="white-text">About Us</h5>
+      </div>
+      <br>
+      <div class="col s8 m8 l6 offset-6">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="person.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="white-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+        </div>
+      </div>
 
     </div>
 
